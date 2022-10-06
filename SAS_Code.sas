@@ -1,4 +1,4 @@
-# 예제 1-1)
+/* 예제 1-1)*/
 DATA one;
 INFILE CARD DML='&$.';
 INPUT a b c;
