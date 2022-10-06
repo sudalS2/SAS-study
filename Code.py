@@ -65,6 +65,13 @@ speaker                title                     location
 Whitfield   Looking at  Water. Looking at Life   Blue Room
 Fuentes     Life After the Ravolution            Red Room
 TOWNSEND    Peace in Our Times                  Green Room
-  
+
+# 예제 1-3)
+DATA one;
+  INFILE 'a:\ex13.txt' EXPANDTABS;
+  INPUT a b c;
+RUN;
+
+
  
   
