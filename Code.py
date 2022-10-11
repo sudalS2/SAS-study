@@ -143,5 +143,16 @@ a
   333
  4444
 55555
- 
-  
+
+# 예제 1-6)
+PROC SORT DATA=one;
+  BY name;
+RUN; -> 데이터 one을 name에 의해서 정렬
+
+DATA TWO;
+  RETAIN oldname; -> 변수 oldname을 초기값이 결측값인 변수로 유지할 것을 지정
+  SET one;
+  IF name = oldname THEN DELETE; -> 만약 변수 name과 oldname의 값이 같으면 그 개체를 제거
+  oldname = name; -> 변수 name의 값을 변수 oldname에 저장
+  DROP oldname;
+RUN;
