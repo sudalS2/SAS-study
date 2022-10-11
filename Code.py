@@ -114,6 +114,34 @@ a b c
 a b c
 1 2 3
 
+# 예제 1-5)
+## flowover 옵션
+data one;
+  infile 'a:\ex15.txt' flowover;
+  input a 5.;
+run;
 
+# 결과
+a
+12233
+44445
+
+## missover 옵션
+# 결과
+a
+.
+.
+.
+.
+55555
+
+## truncover
+# 결과
+a
+    1
+   22
+  333
+ 4444
+55555
  
   
