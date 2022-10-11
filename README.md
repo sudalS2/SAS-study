@@ -21,5 +21,16 @@
 #### 1-2) 데이터가 부족한 경우의 처리 옵션 : FLOWOVER, MISSOVER, STOPOVER
 ##### * FLOWOVER: 다음 줄로 건너 띄어 변수의 수만큼 데이터를 읽어서 처리, defalt값
 ##### * MISSOVER: 데이터가 부족한 변수는 결측값(.)을 넣음
-##### * STOPOVER: 데이터 생성을 중단한다.
-###### -> 예제 1-4)
+##### * STOPOVER: 데이터 생성을 중단한다.(오류 뜸)
+##### * TRUNCOVER: 부족한 자릿수 만큼을 공백 문자로 대체하여 입력 완성
+###### -> 예제 1-4), 예제 1-5)
+
+#### 1-3) 데이터 영역의 지정: LRECL, LINESIZE, PAD
+
+### 2. 개체들 간의 연산: RETAIN 문
+#### 2-1) RETAIN 문 지정
+##### * RETAIN _NUMERIC_; : 모든 숫자형 변수를 지정
+##### * RETAIN flag1-flag5 ''; : 문자형 변수 flag1 ~ flag5까지의 초기값을 결측값으로 지정 
+##### * RETAIN cum_sale 0 use_group 'N'; : 숫자형 변수 cum_sale에는 초기값 0, 문자형 변수 use_group에는 초기값 N을 지정
+##### * 누적합 형식: RETAIN 변수(숫자형, 초기값은 0) + 수식; = RETAIN  변수 0; 변수 = SUM(변수,수식);
+
