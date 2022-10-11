@@ -72,6 +72,12 @@ DATA one;
   INPUT a b c;
 RUN;
 
+# 결과: EXPANDTABS 옵션 없을 시 오류남.
+a b c
+1 2 3
+4 5 6
+7 8 9
+
 
  
   
