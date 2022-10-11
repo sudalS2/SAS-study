@@ -1,6 +1,7 @@
 # 예제 1-1)
+## DLM 옵션 1
 DATA one;
-INFILE CARD DML='&$.';
+INFILE CARD DLM='&$.';
 INPUT a b c;
 CARDS;
 11&$12, 13 
@@ -15,8 +16,7 @@ A  B  C
 2  22 23
 3  32 33
 
-# 예제 1-2)
-## DLM 옵션
+## DLM 옵션 2
 DATA scores;
   INFILE CARDS DLM=','
   INPT test1 test2 test3;
@@ -32,6 +32,7 @@ RUN;
   91    87    95
   97    92    1
 
+# 예제 1-2)
 ## DSD 옵션 1
 DATA scores;
   INFILE CARDS DSD;
