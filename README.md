@@ -33,4 +33,4 @@
 ##### * RETAIN flag1-flag5 ''; : 문자형 변수 flag1 ~ flag5까지의 초기값을 결측값으로 지정 
 ##### * RETAIN cum_sale 0 use_group 'N'; : 숫자형 변수 cum_sale에는 초기값 0, 문자형 변수 use_group에는 초기값 N을 지정
 ##### * 누적합 형식: RETAIN 변수(숫자형, 초기값은 0) + 수식; = RETAIN  변수 0; 변수 = SUM(변수,수식);
-
+##### * 중복된 개체 제거 -> 예제 1-6)
