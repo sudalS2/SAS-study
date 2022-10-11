@@ -78,6 +78,41 @@ a b c
 4 5 6
 7 8 9
 
+# 예제 1-4)
+## flowover 옵션
+data one;
+  infile cards flowover;
+  input a b c;
+cards;
+123
+45
+678
+9012
+345
+;
+run;
+
+# 결과
+a b c
+1 2 3
+4 5 6
+9 0 1
+3 4 5
+
+## missover 옵션
+# 결과
+a b c
+1 2 3
+4 5 .
+6 7 8
+9 0 1
+3 4 5
+
+## stopover 옵션
+# 결과
+a b c
+1 2 3
+
 
  
   
