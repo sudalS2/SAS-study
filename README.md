@@ -20,3 +20,5 @@
 
 #### 1-2) 데이터가 부족한 경우의 처리 -OVER 옵션: FLOWOVER, MISSOVER, STOPOVER
 ##### * FLOWOVER: 다음 줄로 건너 띄어 변수의 수만큼 데이터를 읽어서 처리
+##### * MISSOVER: 데이터가 부족한 변수는 결측값(.)을 넣음
+##### * STOPOVER: 데이터 생성을 중단한다.
